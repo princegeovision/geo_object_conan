@@ -1,6 +1,4 @@
 [requires]
-jansson/2.12@bincrafters/stable
-
 
 [generators]
 xcode
