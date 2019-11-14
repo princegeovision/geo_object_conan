@@ -5,5 +5,5 @@ int main() {
 
     char* result = geo_object_version();
     
-    print("result=%s", result); 
+    printf("result=%s\n", result); 
 }

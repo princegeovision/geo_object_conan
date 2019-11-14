@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.11...3.15)
 
-project(geo_object VERSION 1.1 LANGUAGES C CXX)
+# new cmake command not support in conan
+#project(geo_object VERSION 1.1 LANGUAGES C CXX)
+project(geo_object)
 
 # Step00: 
 # Setup Conan in CMake

@@ -31,6 +31,11 @@ conan config get log.level
 conan config home
 ```
 
+#### 產生 package
+```
+conan create . princegeovision/geo_object
+```
+
 #### 查看目前的 info
 ```
 conan info .
