@@ -5,8 +5,10 @@
 * Study for use CMake and Conan properly.
 
 ## Introduction
+- create a library use modern CMake instruction.
+- create and build with conan cli, (currently v1.20.3)
+- 
 
-* Dependency1: jansson/2.12@bincrafters/stable
-* Dependency2: jansson/2.11@bincrafters/stable
-* Dependency3: jansson/2.10@bincrafters/stable
-* Dependency4:jansson/2.7@lasote/stable
+### More information:
+* Dependency: jansson/2.12@bincrafters/stable
+
