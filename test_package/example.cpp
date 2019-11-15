@@ -6,7 +6,7 @@
 TEST_CASE( "get library version", "[basic]" ) {
 
     char* result = geo_object_version();
-    REQUIRE( std::string(result) == std::string("geo_object_version = v1.1.0") );
+    REQUIRE( std::string(result) == std::string("geo_object_version = v1.2.0") );
 }
 
 TEST_CASE( "create geo_object library", "[basic]" ) {

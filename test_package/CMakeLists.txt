@@ -4,6 +4,10 @@ project(PackageTest CXX)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
+# Add C++11
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 add_executable(example example.cpp catch.hpp)
 target_link_libraries(example ${GEOOBJECT_OUTPUT_NAME} ${CONAN_LIBS})
 

@@ -20,7 +20,7 @@ geo_object* geo_object_create()
     
     return json;
 }
-/*
+
 geo_object* geo_object_create_array()
 {
     json_t* json = json_array();
@@ -706,10 +706,11 @@ bool geo_object_update(geo_object* target, geo_object* source)
     
     return (0 == ret) ? true : false;
 }
-*/
-//1114y19 = "geo_object_version = v1.1.0";
+
+//1114y19 = "geo_object_version = v1.1.0";// use jasson v2.4
+//1115y19 = "geo_object_version = v1.2.0";// use jasson v2.11
 //org = "geo_object_version = v1.0.1";
 char* geo_object_version()
 {
-    return "geo_object_version = v1.1.0";
+    return "geo_object_version = v1.2.0";
 }

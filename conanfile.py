@@ -5,7 +5,7 @@ from conans import ConanFile, CMake, tools
 
 class GeoobjectConan(ConanFile):
     name = "geo_object"
-    version = "1.1"
+    version = "1.2.0"
     license = "MIT"
     author = "prince.geovision.tw@gmail.com"
     url = "https://github.com/princegeovision/geo_object_conan"
