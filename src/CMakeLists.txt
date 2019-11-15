@@ -7,26 +7,8 @@ set(HEADER_LIST "..${ModernCMakeExample_SOURCE_DIR}/include/geo_object/geo_objec
 
 # Make an automatic library - will be static or dynamic based on user setting
 #EX:add_library(modern_library lib.cpp ${HEADER_LIST})
-#add_library(${GEOOBJECT_OUTPUT_NAME} STATIC geo_object.c ${HEADER_LIST})
-add_library(${GEOOBJECT_OUTPUT_NAME} STATIC 
-    geo_object
-    3rd/jansson/dump.c 
-    3rd/jansson/error.c 
-    3rd/jansson/hashtable.c 
-    3rd/jansson/hashtable.h 
-    3rd/jansson/jansson_config.h
-    3rd/jansson/jansson_private.h
-    3rd/jansson/jansson.h
-    3rd/jansson/load.c
-    3rd/jansson/memory.c
-    3rd/jansson/pack_unpack.c
-    3rd/jansson/strbuffer.c
-    3rd/jansson/strbuffer.h
-    3rd/jansson/strconv.c
-    3rd/jansson/utf.c
-    3rd/jansson/utf.h
-    3rd/jansson/value.c
-    ${HEADER_LIST})
+add_library(${GEOOBJECT_OUTPUT_NAME} STATIC geo_object.c ${HEADER_LIST})
+
 
 # We need this directory, and users of our library will need it too
 target_include_directories(${GEOOBJECT_OUTPUT_NAME} PUBLIC ../include/geo_object/)
