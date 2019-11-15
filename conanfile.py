@@ -3,13 +3,13 @@
 
 from conans import ConanFile, CMake, tools
 
-
 class GeoobjectConan(ConanFile):
     name = "geo_object"
     version = "1.1"
     license = "MIT"
     author = "prince.geovision.tw@gmail.com"
     url = "https://github.com/princegeovision/geo_object_conan"
+    requires = "jansson/2.11@bincrafters/stable"
     description = "Object for simplify or aggregate function input/output"
     topics = ("C", "jansson")
     settings = "os", "compiler", "build_type", "arch"
@@ -48,7 +48,6 @@ class GeoobjectConan(ConanFile):
         self.copy("*.so", dst="lib", keep_path=False)
         self.copy("*.dylib", dst="lib", keep_path=False)
         self.copy("*.a", dst="lib", keep_path=False)
-        cmake = self._configure_cmake()
 
     def package_info(self):
         self.cpp_info.libs = ["geo_object"]
